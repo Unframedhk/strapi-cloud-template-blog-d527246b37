@@ -9,35 +9,45 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": { "localized": true }
+  },
   "attributes": {
     "projectName": {
       "type": "string",
       "maxLength": 50,
-      "required": true
+      "required": true,
+      "pluginOptions": { "i18n": { "localized": true } }
     },
     "title": {
       "type": "string",
-      "maxLength": 100
+      "maxLength": 100,
+      "pluginOptions": { "i18n": { "localized": true } }
     },
     "website": {
       "type": "string",
-      "maxLength": 200
+      "maxLength": 200,
+      "pluginOptions": { "i18n": { "localized": true } }
     },
     "seoTitle": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
     },
     "seoDescription": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
     },
     "markdown": {
-      "type": "richtext"
+      "type": "richtext",
+      "pluginOptions": { "i18n": { "localized": true } }
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "pluginOptions": { "i18n": { "localized": true } }
     },
     "excerpt": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
     },
     "featuredImages": {
       "type": "media",
