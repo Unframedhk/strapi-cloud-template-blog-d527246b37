@@ -1,11 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "tags",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Category",
-    "description": "Blog post categories"
+    "singularName": "tag",
+    "pluralName": "tags",
+    "displayName": "Tag",
+    "description": "Blog post tags"
   },
   "options": {
     "draftAndPublish": true
@@ -14,7 +14,7 @@
   "attributes": {
     "name": {
       "type": "string",
-      "maxLength": 100,
+      "maxLength": 50,
       "required": true,
       "unique": true
     },
@@ -25,11 +25,7 @@
     },
     "description": {
       "type": "text",
-      "maxLength": 500
-    },
-    "color": {
-      "type": "string",
-      "maxLength": 7
+      "maxLength": 200
     }
   }
 }
