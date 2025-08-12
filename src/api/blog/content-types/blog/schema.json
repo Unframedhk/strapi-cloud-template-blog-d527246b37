@@ -10,62 +10,54 @@
     "draftAndPublish": true
   },
   "pluginOptions": {
-    "i18n": { "localized": true }
+    "i18n": {
+      "localized": true
+    }
   },
   "attributes": {
-    "projectName": {
-      "type": "string",
-      "maxLength": 50,
-      "required": true,
-      "pluginOptions": { "i18n": { "localized": true } }
-    },
     "title": {
       "type": "string",
-      "maxLength": 100,
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "maxLength": 100
     },
-    "website": {
-      "type": "string",
-      "maxLength": 200,
-      "pluginOptions": { "i18n": { "localized": true } }
-    },
-    "seoTitle": {
+    "metadataTitle": {
       "type": "text",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
-    "seoDescription": {
+    "metadataDescription": {
       "type": "text",
-      "pluginOptions": { "i18n": { "localized": true } }
-    },
-    "markdown": {
-      "type": "richtext",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
-      "pluginOptions": { "i18n": { "localized": true } }
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "excerpt": {
       "type": "string",
-      "pluginOptions": { "i18n": { "localized": true } }
-    },
-    "featuredImages": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "readingTime": {
       "type": "integer"
-    },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
     },
     "project": {
       "type": "enumeration",
@@ -74,6 +66,96 @@
         "starry",
         "onems"
       ]
+    },
+    "Introduction": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "content": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "metadata_keywords": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "openGraph_image": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heroImage": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "featureImage": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog.blog"
+    },
+    "publishedat": {
+      "type": "datetime",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
