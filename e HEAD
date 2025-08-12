@@ -1,0 +1,3 @@
+[33m8bfebd2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mblog-cms[m[33m, [m[1;31morigin/blog-cms[m[33m)[m chore(i18n): enable plugin config and mark blog fields localized (pre-install)
+[33ma435f80[m Replace template with blog-cms app (Strapi 5.21.0)
+[33m0f74ba3[m Initial commit
